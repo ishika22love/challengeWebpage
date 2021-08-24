@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body {
+  background-color: hsl(0, 0%, 95%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: inline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.outerBox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.image {
+  margin: 40px 0px 30px 0px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paragraph {
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.65);
+  font-size: 13px;
+  padding: 0px 30px 20px 0; 
+  line-height: 1.7;
+}
+
+.header {
+  color:hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.element {
+  width: 250px;
+  padding: 0 0 0 30px;
+}
+
+.firstElement {
+  background-color:  hsl(31, 77%, 52%);
+  border-radius: 7px 0px 0px 7px;
+}
+
+.secondElement {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.thirdElement {
+   background-color:  hsl(179, 100%, 13%);
+   border-radius: 0px 7px 7px 0px;
+  
+}
+
+.btn {
+  border-radius: 20px;
+  background-color:  hsl(0, 0%, 95%);
+  border: 1px  hsl(0, 0%, 95%) solid;
+  padding: 10px 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  /*makes the text transparent */
+  color: black;
+  mix-blend-mode: screen;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+/*
+.btn1 {
+  color: hsl(31, 77%, 52%);
+}
+.btn2 {
+color:hsl(184, 100%, 22%);
+}
+.btn3 {
+color: hsl(179, 100%, 13%);
+}
+*/
+
+@media screen and (max-width:576px) {
+   .outerBox {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+   }
+
+   .element {
+     width: 90%;
+   }
+
+   .firstElement {
+     border-radius: 6px 6px 0px 0px
+   }
+
+   .thirdElement {
+     border-radius: 0px 0px 6px 6px;
+   }
 }
